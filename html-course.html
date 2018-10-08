@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--  meta tags don't need a closing tag. add the character encoding e.g charset="UTF-8" Set immediately after head tag.-->
+    <meta charset="UTF-8">
+    <!-- meta tags are used for description of the page. Search engines used to use meta tag. It is now largely ignored.  -->
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- If no title is added it will show up as an untitled document. Will show in tab. -->
+    <title>HTML Practice Document-ju</title>
+</head>
+
+<!-- body tag houses all visible content. It shows as default rendering like p unless it is wrapped in a tag other than a p tag. -->
+<body>
+
+    <h1>&iexcl Practice!</h1> 
+        <h2>&iexcl &nbsp;&nbsp;&nbsp;Visual formatting should be done thru CSS &nbsp;&nbsp;&nbsp;! Nonbreaking space is used to prevent separation Never&nbsp;Break when resizing page.<h2>
+            <p>My beach<img src="/Users/julieturbina/code/html-linkedin notes/download (8).jpeg" alt="beach" width="600 height="300 align="right"></p>
+        <!-- paragraph tag (like the default elements in html) is only the tag = <p> </p> -->
+        <!-- Paragrapy element is the paragraph tag and its contents -->
+        <!-- Add attribute to a tag -> class = name, = is the assignment operator, whatever is the value in quotation marks e.g.  <p class="whatever"></p> -->
+        <!-- informative attribute - gives extra info-->
+        <!-- functional attribute - e.g.a link-->
+        <!-- emphasis tag = <em></em> is nested in the paragraph tag. It is a child element that must be closed before the parent tag is closed. -->
+        <p>HTML uses tags to identify page content. <em>This text, for <strong>example</strong>, is a paragraph.</em></p>
+
+        <h1>HTML uses tags to identify page content. This text, for example, is a paragraph.</h1>
+        
+
+
+        <!-- Block level elements take up their own line -->
+        <!-- In-line elements appear in the flow of other elements.-->
+        <!-- There are 7 main models:
+            1. flow (most of the info, bold, audio, embed. Most of the document) 
+            2. metadate (in the head e.g script, sytle tags etc) 
+            3. embedded (inports other resource into the document e.g. canvas, video etc)
+            4. interactive (for user interaction e.g. button, link, video controls etc) 
+            5. heading (heading e.g h1 - h6), 
+            6. phrasing (the text of the document. in-line anchor tab bottons, input, bold, italics)
+            7. sectioning (it defines the scope and created a new section.) -->
+        <h1>Page content</h1>
+        <p>The main page content appears inside the <b>body</b> tag. HTML contains several elements that allow you to properly structure and format your content, which we'll cover later.</p>
+
+        <h1>Content models</h1>
+
+
+        In HTML 4 there were only two main content models, block and inline level elements. Block level elements would stack on top of each other in normal document flow while inline level elements typically appear within the flow of text content.
+        
+        In this example the heading 1 and the paragraphs are block level items, while the bold tags and the link below are examples of inline level elements.
+        
+        In HTML5 new content models have been created to expand the structure and semantic capabilities of HTML. There are seven main models: <strong>Flow</strong>, <strong>Metadata</strong>, <strong>Embedded</strong>, <strong>Interactive</strong>, <strong>Heading</strong>, <strong>Phrasing</strong>, and <strong>Sectioning</strong>. To learn more about them, visit the interactive graphic contained in the W3C HTML5 specfication.
+
+
+        <h1>HTML Essential Training</h1>
+        <h2>Formatting page content</h2>
+        In this series of exercises, we'll explore how to use HTML elements to format basic page content.
+        <h3>Adding headings</h3>
+            Headings help define the structure of the page and control the hierarchy of the content. You can use heading values ranging from a top-level heading of h1 all the way down to an h6. While there are several competing theories on the exact strategy to use when choosing headings, what really matters is that you are using them in an intelligent manner, to accurately reflect the importance of your content. It's also important to be consistent in how you use headings across your site, so deciding on when and how to use headings is an important part of planning your site.
+        <h3>Using paragraphs</h3>
+    The paragraph tag (⟨p⟩) is one of the most basic formatting tags, and one that you'll use often. It indicates a paragraph of text, and should be used for each individual paragraph.
+        <h3>Line breaks</h3>
+        <!-- closing paragraph tags are optional but USE THEM -->
+            <p>Occasionally you'll need to perform a "soft return," that is, create a new line without using a new paragraph. To do that in HTML, you use the line break tag (⟨br⟩). Line break tags are inline, meaning you can use them within headers and paragraphs, and don't require a closing tag.</p> 
+            <p>Let's say you were formatting an address, for example. You could use line breaks to make sure each line of the address appeared on a separate line, but still remained within the same paragraph.</p>  
+            <p>lynda.com<br> 6410 Via Real<br> Carpinteria, CA 93103.</p> 
+
+            <h3>Emphasizing text</h3>
+            <p>Often you will want to emphasize a particular phrase or word within your text. HTML gives you several different tags to do this with. In this exercise we'll explore the four most common formatting tags you'll use to emphasize content.</p>
+            <!-- <dt>= term tag
+                <dd>=definition tag -->
+            <dl>
+            <dt><b>The Bold Tag</b></dt>
+            <dd>The bold tag (⟨b⟩) is mean to represent a span of text that you wish to set apart stylistically from the rest of the text without inferring any type of special relevance or meaning. It was removed in XHTML as being solely presentational, but added back to HTML5. As you would expect, browsers typically bold this text</dd>.
+            <dt><b>The Strong Tag</b></dt>
+            <dd>By using the strong tag (⟨strong⟩) you are representing a string of text as having strong importance. The text should be considered to be more important than the text surrounding it. It is typically displayed as bold.</dd>
+            <dt><b>The <i>Italic</i> Tag</b></dt>
+            <dd>Like the bold tag, the italic tag (⟨i⟩) represents a string of text that is set apart stylistically from the text around it. No particular meaning is attached to the text, rather it is rendered in <i>italics</i>. Helpful for phrases, terms, or any text that is normally displayed in italics.</dd>
+            <dt><b>The Emphasis Tag</b></dt>
+            <dd>The emphasis tag (⟨em⟩), or "em" tag, denotes text that is emphasized more than the text around it. Although this tag is usually rendered in italics, it shouldn't be used in place of the italics tag, rather it should be used for text that needs to emphasized for some reason.</dd>
+            <h3>Wait.... what?</h3>
+            <p>You're probably wondering why there are multiple tags for bolding and italicizing text. If you are, don't worry, <strong>you're not alone!</strong> This is one of the most confusing aspects of learning HTML. The easiest way for me to explain it is this: One set of tags is <em>presentational</em>, while the other is <em>logical</em>. What that means is that presentational text doesn't convey explicit meaning, it merely serves to change the styling of the text. Logical elements however do convey a specific meaning. Text that is either bold or italic are just that, bold or italic. Text that is represented with a strong or em tag can represent multiple states. Using styles, for example, you could change it so that the text is underlined or highlighted. By contrast, it wouldn't make much sense to change the styling of a bold or italic element, since they are represented exactly as intended.
+            
+            <p>There are other elements you'll need to research when learning about emphasizing text as well. The <b>cite tag (⟨cite⟩)</b>, for example, is used for citing a work such as a book title, or an author, and is usually displayed as italicized text.
+
+    </body>
+</html>
